@@ -15,17 +15,9 @@ class Parser{
 
     parserString(){
 
-        return this._s.split(':').filter(Number) ;
+        return this._s.split(':').filter(Number).map(triSpace => triSpace.trim()) ;
     }
 }
 
 const newString = new Parser(phrase);
-const parseString = newString.parserString();
-for (numb of parseString) {
-    numb = numb.trim();
-    return;
-}
-console.log(parseString);
-
-console.log();
-// console.log(rec.area() )
+console.log(newString.parserString());
