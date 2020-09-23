@@ -14,10 +14,9 @@ class Parser{
     }
 
     parserString(){
-
         return this._s.split(':').filter(Number).map(triSpace => triSpace.trim()) ;
     }
 }
 
-const newString = new Parser(phrase);
-console.log(newString.parserString());
+const parser = new Parser(phrase);
+console.log(parser.parserString());
