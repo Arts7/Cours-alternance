@@ -34,3 +34,4 @@ square.w = 7;
 console.log(square.area());
 console.log(square);
 
+
